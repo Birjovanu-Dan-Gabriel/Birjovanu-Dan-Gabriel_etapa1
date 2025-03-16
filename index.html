@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
+
     <title>Shaormeria Dan</title>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- va fi explicat când ajungem la CSS -->
     <meta name="keywords" content="mancare, shaorma, kebab, kebap, comanda, restaurant"><!--cuvintele cheie ale paginii; majoritatea motoarelor de căutare ignoră keywords -->
     <meta name="description" content="Comanda online. Afla informatii despre Shaormeria Dan"><!-- descrierea paginii, adesea apare sub link când sunt afișate rezultatele căutării -->
@@ -13,12 +15,13 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./resurse/ico/favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Shaormeria Dan" />
     <link rel="manifest" href="./resurse/ico/favicon/site.webmanifest" />
-    <link rel="stylesheet" type="text/css" href="./resurse/css/general.css0.">
+    <link rel="stylesheet" type="text/css" href="./resurse/css/general.css">
 </head>
+
 <body>
     <header>
 
-        <h1> Shaormeria Dan </h1> 
+        <h1> Shaormeria Dan </h1>
         <h2> Meniu navigare: </h2>
         <nav>
             <ul>
@@ -31,173 +34,183 @@
                 </li>
                 <li> <a href="#produse">Produse populare </a> </li>
                 <li> <a href="#livrare">Comanda acum </a> </li>
-                <li> <a href="#info"    >Despre noi </a> </li>
+                <li> <a href="#info">Despre noi </a> </li>
             </ul>
         </nav>
     </header>
     <main>
-        <p>Shaormeria Dan va invita la<b> restaurantul </b>nostru pentru a gusta <em>cel mai delicios</em> <b>kebap</b> din Bucuresti</p>
-        <section id="recenzie">
-            <h2>Recenzii:</h2>
-            <p> Asculta glasul clientilor nostri multumiti!</p>
-            <section id="rev_cli">
-                <h3>Marius Apopei</h3>
-                <p><q>Cel mai bun kebab din toata europa!</q><br />⭐⭐⭐⭐⭐</p>
+        <div id="grid-pagina">
+            <p>Shaormeria Dan va invita la<b> restaurantul </b>nostru pentru a gusta <em>cel mai delicios</em> <b>kebap</b> din Bucuresti</p>
+            <section id="recenzie">
+                <h2>Recenzii:</h2>
+                <p> Asculta glasul clientilor nostri multumiti!</p>
+                <section id="rev_cli">
+                    <h3>Marius Apopei</h3>
+                    <p><q>Cel mai bun kebab din toata europa!</q><br />⭐⭐⭐⭐⭐</p>
 
-                <h3>Andreea Mihailescu</h3>
-                <p><q>Mancarea este extrem de gustoasa, un restaurant de 10 stele !</q><br />⭐⭐⭐⭐⭐</p>
+                    <h3>Andreea Mihailescu</h3>
+                    <p><q>Mancarea este extrem de gustoasa, un restaurant de 10 stele !</q><br />⭐⭐⭐⭐⭐</p>
 
-                <h3>Bogdan Ioan</h3>
-                <p><q>Am avut o experienta minunata! Reomand din tot sufletul!</q><br />⭐⭐⭐⭐⭐</p>
+                    <h3>Bogdan Ioan</h3>
+                    <p><q>Am avut o experienta minunata! Recomand din tot sufletul!</q><br />⭐⭐⭐⭐⭐</p>
+                </section>
+
+                <section id="rev_usr">
+                    <h3>Ofera-ne parerea ta!</h3>
+                    <p>Completeaza campurile de mai jos si spune-ne experienta avuta in una dintre locatiile noastre!</p>
+                    <p>____________________</p>
+                    <p>| Scrie aici! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</p>
+                    <p>____________________</p>
+                    <p>⭐⭐⭐⭐⭐</p>
+                </section>
             </section>
 
-            <section id="rev_usr">
-                <h3>Ofera-ne parerea ta!</h3>
-                <p>Completeaza campurile de mai jos si spune-ne experienta avuta in una dintre locatiile noastre!</p>
-                <p>____________________</p>
-                <p>| Scrie aici! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</p>
-                <p>____________________</p>
-                <p>⭐⭐⭐⭐⭐</p>
+            <section id="produse">
+                <h2>Cele mai vandute produse</h2>
+
+                <section>
+                    <h3>Shaorma Falafel</h3>
+                    <figure>
+                        <picture>
+                            <source srcset="./resurse/imagini/shaorma-falafel.jpg-sml.jpg" media="(max-width: 400px)">
+                            <source srcset="./resurse/imagini/shaorma-falafel.jpg-med.jpg" media="(max-width: 600px)">
+                            <img src="./resurse/imagini/shaorma-falafel.jpg" alt="Shaorma Falafel" style="width: 300px; height: 300px; ">
+                        </picture>
+                        <figcaption>Shaorma Falafel Shaormeria Dan</figcaption>
+                    </figure>
+                    <details>
+                        <summary>Detalii</summary>
+                        <p>lipie (70g), cartofi (120g), chifteluțe falafel (150g), varză (55g), castraveți (25g), ceapă (15g), pătrunjel (10g), roșii (40g), sos de usturoi (20g), ketchup (20g), maioneză picantă (20g), maioneză (20g), curry (20g), ulei picant (10g) și ardei iute (5g). </p>
+                    </details>
+                    <details>
+                        <summary>Aditivi</summary>
+                        <p>
+                            Apa Ulei vegetal Amidon Zahar Boabe de Mustar Otet Sare iodata pasta de tomate galbenus de ou ardei iute (extract) aroma tomate usturoi granulat guma Xantan sare otet acid lactic acid citric betacaroten amestec condimente benzoat de sodiu sorbat de potasiu antioxidant calciu disodic Praf de ou Ulei vegetal (palmier) Antioxidanti (BHT) Ag antispumare (Dimetil Polixiloxan) carne Pui sau Vita apa proteina vegetala amidon sare pudra de ardei gluten faina coriandru mustar dextroza proteina din soia di si tri polifosfati de sodiu (E450 E451) Liant (E450, E451) agent de ingrosare
+                        </p>
+                    </details>
+                </section>
+
+                <section>
+                    <h3>Cheese Kebab</h3>
+                    <figure>
+                        <picture>
+                            <source srcset="./resurse/imagini/cheese-kebab-sml.jpg" media="(max-width: 400px)">
+                            <source srcset="./resurse/imagini/cheese-kebab-med.jpg" media="(max-width: 600px)">
+                            <img src="./resurse/imagini/cheese-kebab.jpg" alt="Cheese-kebab" style="width: 300px; height: 300px;">
+                        </picture>
+                        <figcaption>Cheese-kebab Shaormeria Dan</figcaption>
+                    </figure>
+                    <details>
+                        <summary>Detalii</summary>
+                        <p>lipie (70g), cartofi (120g), chifteluțe falafel (150g), varză (55g), castraveți (25g), ceapă (15g), pătrunjel (10g), roșii (40g), sos de usturoi (20g), ketchup (20g), maioneză picantă (20g), maioneză (20g), curry (20g), ulei picant (10g) și ardei iute (5g). </p>
+                    </details>
+                    <details>
+                        <summary>Aditivi</summary>
+                        <p>
+                            Apa Ulei vegetal Amidon Zahar Boabe de Mustar Otet Sare iodata pasta de tomate galbenus de ou ardei iute (extract) aroma tomate usturoi granulat guma Xantan sare otet acid lactic acid citric betacaroten amestec condimente benzoat de sodiu sorbat de potasiu antioxidant calciu disodic Praf de ou Ulei vegetal (palmier) Antioxidanti (BHT) Ag antispumare (Dimetil Polixiloxan) carne Pui sau Vita apa proteina vegetala amidon sare pudra de ardei gluten faina coriandru mustar dextroza proteina din soia di si tri polifosfati de sodiu (E450 E451) Liant (E450, E451) agent de ingrosare
+                        </p>
+                    </details>
+                </section>
+
+                <section>
+                    <h3>Shaorma Farfurie Mix Steak</h3>
+                    <figure>
+                        <picture>
+                            <source srcset="./resurse/imagini/shaorma-farfurie-mix-steak-sml.jpg" media="(max-width: 400px)">
+                            <source srcset="./resurse/imagini/shaorma-farfurie-mix-steak-med.jpg" media="(max-width: 600px)">
+                            <img src="./resurse/imagini/shaorma-farfurie-mix-steak.jpg" alt="Shaorma-Farfurie-Mix-Steak" style="width: 300px; height: 300px;">
+                        </picture>
+                        <figcaption>Shaorma Farfurie Mix Steak Shaormeria Dan</figcaption>
+                    </figure>
+                    <details>
+                        <summary>Detalii</summary>
+                        <p>lipie (70g), cartofi (120g), chifteluțe falafel (150g), varză (55g), castraveți (25g), ceapă (15g), pătrunjel (10g), roșii (40g), sos de usturoi (20g), ketchup (20g), maioneză picantă (20g), maioneză (20g), curry (20g), ulei picant (10g) și ardei iute (5g). </p>
+                    </details>
+                    <details>
+                        <summary>Aditivi</summary>
+                        <p>
+                            Apa Ulei vegetal Amidon Zahar Boabe de Mustar Otet Sare iodata pasta de tomate galbenus de ou ardei iute (extract) aroma tomate usturoi granulat guma Xantan sare otet acid lactic acid citric betacaroten amestec condimente benzoat de sodiu sorbat de potasiu antioxidant calciu disodic Praf de ou Ulei vegetal (palmier) Antioxidanti (BHT) Ag antispumare (Dimetil Polixiloxan) carne Pui sau Vita apa proteina vegetala amidon sare pudra de ardei gluten faina coriandru mustar dextroza proteina din soia di si tri polifosfati de sodiu (E450 E451) Liant (E450, E451) agent de ingrosare
+                        </p>
+                    </details>
+                </section>
+
+                <section>
+                    <h3>Shaorma Mare Pui</h3>
+                    <figure>
+                        <picture>
+                            <source srcset="./resurse/imagini/shaorma-mare-pui-sml.jpg" media="(max-width: 400px)">
+                            <source srcset="./resurse/imagini/shaorma-mare-pui-med.jpg" media="(max-width: 600px)">
+                            <img src="./resurse/imagini/shaorma-mare-pui.jpg" alt="Shaorma-Mare-Pui" style="width: 300px; height: 300px;">
+                        </picture>
+                        <figcaption>Shaorma Mare Pui Shaormeria Dan</figcaption>
+                    </figure>
+                    <details>
+                        <summary>Detalii</summary>
+                        <p>lipie (70g), cartofi (120g), carne (150g), varză (55g), castraveți (25g), ceapă (15g), pătrunjel (10g), roșii (40g), sos de usturoi (20g), ketchup (20g), maioneză picantă (20g), maioneză (20g), curry (20g), ulei picant (10g) și ardei iute (5g) .</p>
+                    </details>
+                    <details>
+                        <summary>Aditivi</summary>
+                        <p>
+                            Apa Ulei vegetal Amidon Zahar Boabe de Mustar Otet Sare iodata pasta de tomate galbenus de ou ardei iute (extract) aroma tomate usturoi granulat guma Xantan sare otet acid lactic acid citric betacaroten amestec condimente benzoat de sodiu sorbat de potasiu antioxidant calciu disodic Praf de ou Ulei vegetal (palmier) Antioxidanti (BHT) Ag antispumare (Dimetil Polixiloxan) carne Pui sau Vita apa proteina vegetala amidon sare pudra de ardei gluten faina coriandru mustar dextroza proteina din soia di si tri polifosfati de sodiu (E450 E451) Liant (E450, E451) agent de ingrosare
+                        </p>
+                    </details>
+                </section>
+
+                <section>
+                    <h3>Sandwich Rapid</h3>
+                    <figure>
+                        <picture>
+                            <source srcset="./resurse/imagini/sandwich-rapid-sml.jpg" media="(max-width: 400px)">
+                            <source srcset="./resurse/imagini/sandwich-rapid-med.jpg" media="(max-width: 600px)">
+                            <img src="./resurse/imagini/sandwich-rapid.jpg" alt="Sandwich-Rapid" style="width: 300px; height: 300px;">
+                        </picture>
+                        <figcaption>Sandwich Rapid Shaormeria Dan</figcaption>
+                    </figure>
+                    <details>
+                        <summary>Detalii</summary>
+                        <p>baghetă (100g), cartofi (70g), carne (100g), varză (30g), castraveți (20g), ceapă (15g), pătrunjel (10g), roșii (20g), sos de usturoi (15g), ketchup (15g), maioneză picantă (15g), maioneză (15g), curry (15g), ulei picant (7g) și ardei iute (7g).</p>
+                    </details>
+                    <details>
+                        <summary>Aditivi</summary>
+                        <p>
+                            Apa Ulei vegetal Amidon Zahar Boabe de Mustar Otet Sare iodata pasta de tomate galbenus de ou ardei iute (extract) aroma tomate usturoi granulat guma Xantan sare otet acid lactic acid citric betacaroten amestec condimente benzoat de sodiu sorbat de potasiu antioxidant calciu disodic Praf de ou Ulei vegetal (palmier) Antioxidanti (BHT) Ag antispumare (Dimetil Polixiloxan) carne Pui sau Vita apa proteina vegetala amidon sare pudra de ardei gluten faina coriandru mustar dextroza proteina din soia di si tri polifosfati de sodiu (E450 E451) Liant (E450, E451) agent de ingrosare
+                        </p>
+                    </details>
+                </section>
+                <a href="./resurse/imagini/meniu.jpg" download="meniu.jpg">Descarca meniu</a>
             </section>
-        </section>
-
-        <section id="produse">
-            <h2>Cele mai vandute produse</h2>
 
 
-            <h3>Shaorma Falafel</h3>
-            <figure>
-                <picture>
-                    <source srcset="./resurse/imagini/shaorma-falafel.jpg-sml.jpg" media="(max-width: 400px)">
-                    <source srcset="./resurse/imagini/shaorma-falafel.jpg-med.jpg" media="(max-width: 600px)">
-                    <img src="./resurse/imagini/shaorma-falafel.jpg" alt="Shaorma Falafel">
-                </picture>
-                <figcaption>Shaorma Falafel Shaormeria Dan</figcaption>
-            </figure>
-            <details>
-                <summary>Detalii</summary>
-                <p>lipie (70g), cartofi (120g), chifteluțe falafel (150g), varză (55g), castraveți (25g), ceapă (15g), pătrunjel (10g), roșii (40g), sos de usturoi (20g), ketchup (20g), maioneză picantă (20g), maioneză (20g), curry (20g), ulei picant (10g) și ardei iute (5g). </p>
-            </details>
-            <details>
-                <summary>Aditivi</summary>
-                <p>
-                    Apa Ulei vegetal Amidon Zahar Boabe de Mustar Otet Sare iodata pasta de tomate galbenus de ou ardei iute (extract) aroma tomate usturoi granulat guma Xantan sare otet acid lactic acid citric betacaroten amestec condimente benzoat de sodiu sorbat de potasiu antioxidant calciu disodic Praf de ou Ulei vegetal (palmier) Antioxidanti (BHT) Ag antispumare (Dimetil Polixiloxan) carne Pui sau Vita apa proteina vegetala amidon sare pudra de ardei gluten faina coriandru mustar dextroza proteina din soia di si tri polifosfati de sodiu (E450 E451) Liant (E450, E451) agent de ingrosare
-                </p>
-            </details>
+            <section id="livrare">
+                <h2>Comanda acum</h2>
+                <section>
+                    <a href="https://glovoapp.com/" target="blank"> Glovo </a><br />
+                    <a href="https://tazz.ro/" target="blank"> Tazz </a><br />
+                    <a href="https://food.bolt.eu/" target="blank"> Bolt food </a><br />
+                </section>
+            </section>
 
 
-            <h3>Cheese Kebab</h3>
-            <figure>
-                <picture>
-                    <source srcset="./resurse/imagini/cheese-kebab-sml.jpg" media="(max-width: 400px)">
-                    <source srcset="./resurse/imagini/cheese-kebab-med.jpg" media="(max-width: 600px)">
-                    <img src="./resurse/imagini/cheese-kebab.jpg" alt="Cheese-kebab">
-                </picture>
-                <figcaption>Cheese-kebab Shaormeria Dan</figcaption>
-            </figure>
-            <details>
-                <summary>Detalii</summary>
-                <p>lipie (70g), cartofi (120g), chifteluțe falafel (150g), varză (55g), castraveți (25g), ceapă (15g), pătrunjel (10g), roșii (40g), sos de usturoi (20g), ketchup (20g), maioneză picantă (20g), maioneză (20g), curry (20g), ulei picant (10g) și ardei iute (5g). </p>
-            </details>
-            <details>
-                <summary>Aditivi</summary>
-                <p>
-                    Apa Ulei vegetal Amidon Zahar Boabe de Mustar Otet Sare iodata pasta de tomate galbenus de ou ardei iute (extract) aroma tomate usturoi granulat guma Xantan sare otet acid lactic acid citric betacaroten amestec condimente benzoat de sodiu sorbat de potasiu antioxidant calciu disodic Praf de ou Ulei vegetal (palmier) Antioxidanti (BHT) Ag antispumare (Dimetil Polixiloxan) carne Pui sau Vita apa proteina vegetala amidon sare pudra de ardei gluten faina coriandru mustar dextroza proteina din soia di si tri polifosfati de sodiu (E450 E451) Liant (E450, E451) agent de ingrosare
-                </p>
-            </details>
-
-
-            <h3>Shaorma Farfurie Mix Steak</h3>
-            <figure>
-                <picture>
-                    <source srcset="./resurse/imagini/shaorma-farfurie-mix-steak-sml.jpg" media="(max-width: 400px)">
-                    <source srcset="./resurse/imagini/shaorma-farfurie-mix-steak-med.jpg" media="(max-width: 600px)">
-                    <img src="./resurse/imagini/shaorma-farfurie-mix-steak.jpg" alt="Shaorma-Farfurie-Mix-Steak">
-                </picture>
-                <figcaption>Shaorma Farfurie Mix Steak Shaormeria Dan</figcaption>
-            </figure>
-            <details>
-                <summary>Detalii</summary>
-                <p>lipie (70g), cartofi (120g), chifteluțe falafel (150g), varză (55g), castraveți (25g), ceapă (15g), pătrunjel (10g), roșii (40g), sos de usturoi (20g), ketchup (20g), maioneză picantă (20g), maioneză (20g), curry (20g), ulei picant (10g) și ardei iute (5g). </p>
-            </details>
-            <details>
-                <summary>Aditivi</summary>
-                <p>
-                    Apa Ulei vegetal Amidon Zahar Boabe de Mustar Otet Sare iodata pasta de tomate galbenus de ou ardei iute (extract) aroma tomate usturoi granulat guma Xantan sare otet acid lactic acid citric betacaroten amestec condimente benzoat de sodiu sorbat de potasiu antioxidant calciu disodic Praf de ou Ulei vegetal (palmier) Antioxidanti (BHT) Ag antispumare (Dimetil Polixiloxan) carne Pui sau Vita apa proteina vegetala amidon sare pudra de ardei gluten faina coriandru mustar dextroza proteina din soia di si tri polifosfati de sodiu (E450 E451) Liant (E450, E451) agent de ingrosare
-                </p>
-            </details>
-
-
-            <h3>Shaorma Mare Pui</h3>
-            <figure>
-                <picture>
-                    <source srcset="./resurse/imagini/shaorma-mare-pui-sml.jpg" media="(max-width: 400px)">
-                    <source srcset="./resurse/imagini/shaorma-mare-pui-med.jpg" media="(max-width: 600px)">
-                    <img src="./resurse/imagini/shaorma-mare-pui.jpg" alt="Shaorma-Mare-Pui">
-                </picture>
-                <figcaption>Shaorma Mare Pui Shaormeria Dan</figcaption>
-            </figure>
-            <details>
-                <summary>Detalii</summary>
-                <p>lipie (70g), cartofi (120g), carne (150g), varză (55g), castraveți (25g), ceapă (15g), pătrunjel (10g), roșii (40g), sos de usturoi (20g), ketchup (20g), maioneză picantă (20g), maioneză (20g), curry (20g), ulei picant (10g) și ardei iute (5g) .</p>
-            </details>
-            <details>
-                <summary>Aditivi</summary>
-                <p>
-                    Apa Ulei vegetal Amidon Zahar Boabe de Mustar Otet Sare iodata pasta de tomate galbenus de ou ardei iute (extract) aroma tomate usturoi granulat guma Xantan sare otet acid lactic acid citric betacaroten amestec condimente benzoat de sodiu sorbat de potasiu antioxidant calciu disodic Praf de ou Ulei vegetal (palmier) Antioxidanti (BHT) Ag antispumare (Dimetil Polixiloxan) carne Pui sau Vita apa proteina vegetala amidon sare pudra de ardei gluten faina coriandru mustar dextroza proteina din soia di si tri polifosfati de sodiu (E450 E451) Liant (E450, E451) agent de ingrosare
-                </p>
-            </details>
-
-
-            <h3>Sandwich Rapid</h3>
-            <figure>
-                <picture>
-                    <source srcset="./resurse/imagini/sandwich-rapid-sml.jpg" media="(max-width: 400px)">
-                    <source srcset="./resurse/imagini/sandwich-rapid-med.jpg" media="(max-width: 600px)">
-                    <img src="./resurse/imagini/sandwich-rapid.jpg" alt="Sandwich-Rapid">
-                </picture>
-                <figcaption>Sandwich Rapid Shaormeria Dan</figcaption>
-            </figure>
-            <details>
-                <summary>Detalii</summary>
-                <p>baghetă (100g), cartofi (70g), carne (100g), varză (30g), castraveți (20g), ceapă (15g), pătrunjel (10g), roșii (20g), sos de usturoi (15g), ketchup (15g), maioneză picantă (15g), maioneză (15g), curry (15g), ulei picant (7g) și ardei iute (7g).</p>
-            </details>
-            <details>
-                <summary>Aditivi</summary>
-                <p>
-                    Apa Ulei vegetal Amidon Zahar Boabe de Mustar Otet Sare iodata pasta de tomate galbenus de ou ardei iute (extract) aroma tomate usturoi granulat guma Xantan sare otet acid lactic acid citric betacaroten amestec condimente benzoat de sodiu sorbat de potasiu antioxidant calciu disodic Praf de ou Ulei vegetal (palmier) Antioxidanti (BHT) Ag antispumare (Dimetil Polixiloxan) carne Pui sau Vita apa proteina vegetala amidon sare pudra de ardei gluten faina coriandru mustar dextroza proteina din soia di si tri polifosfati de sodiu (E450 E451) Liant (E450, E451) agent de ingrosare
-                </p>
-            </details>
-            <a href="./resurse/imagini/meniu.jpg" download="meniu.jpg">Descarca meniu</a>
-        </section>
-
-        
-        <section id="livrare">
-            <h2>Comanda acum</h2>
-                <a href="https://glovoapp.com/" target="blank"> Glovo </a><br />
-                <a href="https://tazz.ro/" target="blank"> Tazz </a><br />
-                <a href="https://food.bolt.eu/" target="blank"> Bolt food </a><br />
-        </section>
-
-
-        <section id="info">
-            <h2>Despre noi</h2>
-            <h3>Cum am inceput</h3>
-            <p>În 2015, a prins contur visul nostru de a aduce pe harta Bucureștiului o <b>shaormerie</b> care să facă minuni cu rotisorul. Gusturile preparatelor noastre îți vor aduce papilele gustative în delir, iar promisiunea noastră este să-ți oferim o clipă de plăcere ce îți va oferi pauză binemeritată de la stilul de viață alert al secolului nostru.</p>
-            <details>
-                <summary>Afla mai multe</summary>
-                <p>Pe măsură ce timpul trece și ne împlinim peste un deceniu de activitate, ne umplem amintirile cu mândria de a fi alegerea preferată a gurmanzilor bucureșteni și nu numai. Însă, ambiția noastră nu cunoaște limite! Ne îmbunătățim, inovăm și evoluăm necontenit, cu o misiune clară în minte: să răspândim fericirea prin deliciile pe care le oferim.</p>
-                <p>Vă așteptăm cu mare plăcere să pășiți în sanctuarul gastronomic al Shaormeriei Dan, unde gustul se împletește armonios cu spiritul comunității, iar calitatea întotdeauna își respectă promisiunea alături de prețuri corecte!</p>
-            </details>
-        </section>
-
+            <section id="info">
+                <h2>Despre noi</h2>
+                <section>
+                    <h3>Cum am inceput</h3>
+                    <p>În 2015, a prins contur visul nostru de a aduce pe harta Bucureștiului o <b>shaormerie</b> care să facă minuni cu rotisorul. Gusturile preparatelor noastre îți vor aduce papilele gustative în delir, iar promisiunea noastră este să-ți oferim o clipă de plăcere ce îți va oferi pauză binemeritată de la stilul de viață alert al secolului nostru.</p>
+                    <details>
+                        <summary>Afla mai multe</summary>
+                        <p>Pe măsură ce timpul trece și ne împlinim peste un deceniu de activitate, ne umplem amintirile cu mândria de a fi alegerea preferată a gurmanzilor bucureșteni și nu numai. Însă, ambiția noastră nu cunoaște limite! Ne îmbunătățim, inovăm și evoluăm necontenit, cu o misiune clară în minte: să răspândim fericirea prin deliciile pe care le oferim.</p>
+                        <p>Vă așteptăm cu mare plăcere să pășiți în sanctuarul gastronomic al Shaormeriei Dan, unde gustul se împletește armonios cu spiritul comunității, iar calitatea întotdeauna își respectă promisiunea alături de prețuri corecte!</p>
+                    </details>
+                </section>
+            </section>
+        </div>
     </main>
     <footer>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d712.221073314284!2d26.099085101657117!3d44.43553563275412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff472f47f047%3A0x493984726f0235f9!2sFaculty%20of%20Mathematics%20and%20Computer%20Science!5e0!3m2!1sen!2sro!4v1741187713593!5m2!1sen!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <a href="http://www.google.com" target="blank"> Google </a><br />
         <a href="#"> Inceput </a><br />
         <a href="tel:+40720000000">Telefon </a><br />
-        <a href="mailto:shaormeriadan@gmail.com">Mail </a> <br/>
+        <a href="mailto:shaormeriadan@gmail.com">Mail </a> <br />
         <a href="https://wa.me/1234567890">WhatsApp</a>
 
         <br />
