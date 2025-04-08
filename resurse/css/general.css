@@ -1,165 +1,289 @@
 ﻿
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+/*main {
+    padding-left: 2em;
+    padding-right: 2em;*/
+    /*box-shdow ca sa apara degrade-ul acela usor pe margini
+  observati ca umbra e inset, ca sa se vada in interiorul elementului
+   */
+    /*box-shadow: inset grey 0px 0px 10px;
+    padding-top: 2em;
+    background: white;
     box-sizing: border-box;
-    background-color: #E9C5F0;
+    display: grid;
+    grid-template-areas:
+        
+}*/
+
+html {
+    font-size: 18px;
+    
+}
+body {
+    /*#A1F8BA*/
+    --culoare-bkg: #568556;
+    --culoare-alb: white;
+    --culoare-sectiune: white;
+    --culoare-border: #A1F8BA;
+    --culoare-bkg-buton: #DBFAE2;
+    --spatiere-pagina: 80px;
+    font-size: 15px;
+    background-color: var(--culoare-bkg);
+}
+
+h2{
+    font-size:1.4rem;
 }
 
 #grid-pagina {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    border: none;
+    row-gap: 20px;
+    column-gap:20px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "gr-prezentare gr-prezentare gr-prezentare"
+                         "gr-tabel gr-tabel gr-diversea"
+                         "gr-utilizatori gr-statistici gr-diversea"
+                         "gr-anunturi gr-calendar gr-server"
+}
+main{
+    padding-left: var(--spatiere-pagina);
+    padding-right: var(--spatiere-pagina);
 }
 
+#grid-pagina > * {
+    outline: 3px solid var(--culoare-border);
+    border-radius: 10px;
+    box-shadow: black 0px 0px 20px;
+    padding: 20px;
+    background-color: var(--culoare-sectiune);
+}
+#grid-pagina > figure{
 
-header {
-    grid-column: 1 / -1; 
+}
+
+#grid-pagina img{
+    width: 80%;
+    max-width:300px;
+}
+#prezentare {
+    grid-area: gr-prezentare;
     text-align: center;
-    background-color: #f8f8f8;
-    padding: 20px;
-    border-bottom: 2px solid #ccc;
-    background-color: #BAA6E0;
+    padding-top: 200px;
+    align-items: center;
 }
 
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-    nav ul li {
-        display: inline;
+    #prezentare h1 {
+        font-family: "Alumni Sans Pinstripe", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        color: black;
+        font-size:70px;
+        color:black;
     }
 
-        nav ul li a {
-
-            color: #333;
-            font-weight: bold;
+    #prezentare a {
+        display: block;
+        color: black;
+        text-decoration: none;
+        width: 100px;
+        height: 40px;
+        text-align: center;
+        border: 3px solid var(--culoare-border);
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: green 0px 0px 5px;
+        align-items: center;
+        cursor: pointer;
+        margin: 0 auto; /* 🔥 acest lucru îl centrează pe orizontală */
+        line-height: 40px; /* ca să centrezi textul pe verticală */
+        transition: 0.3s;
+    }
+        #prezentare a:hover {
+            background-color: var(--culoare-bkg-buton);
         }
 
-
-section {
-    background-color: #fff;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#recenzie {
-    grid-column: 1 / -1; 
-    grid-template-columns: repeat(2, 1fr);
-    display: grid;
-    gap: 20px;
-    background-color: #E0A6E0;
+#tabel{
+    grid-area: gr-tabel;
 }
 
 
-#livrare {
-    grid-column: 1 / -1; 
-    display: grid;
-    gap: 20px;
-    background-color: #E0A6E0;
+
+#calendar{
+    grid-area: gr-calendar;
 }
 
-#info {
-    grid-column: 1 / -1; 
-    display: grid;
-    gap: 20px;
-    background-color: #E0A6E0;
+#anunturi{
+    grid-area: gr-anunturi;
 }
 
-#produse {
-    grid-column: 1 / -1;
-    grid-template-columns: repeat(2, 1fr);
-    display: grid;
-    gap: 20px;
-    background-color: #E0A6E0;
+#utilizatori{
+    grid-area: gr-utilizatori;
+}
+
+#statistici{
+    grid-area: gr-statistici;
+}
+
+#server{
+    grid-area: gr-server;
+}
+
+#diversea{
+    grid-area: gr-diversea;
 }
 
 
-footer {
-    grid-column: 1 / -1;
+
+.taburi-iframe > a {
+    display: block;
+    color:black;
+    text-decoration: none;
+    width: 100px;
+    height: 40px;
     text-align: center;
-    background-color: #f8f8f8;
-    padding: 20px;
-    border-top: 2px solid #ccc;
-    margin-top: 20px;
-    background-color: #BAA6E0;
+    border: 3px solid var(--culoare-border);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: white;
+    box-shadow: green 0px 0px 4px;
+    transition: all 0.3s linear;
 }
 
+    .taburi-iframe > a:hover {
+        background-color: var(--culoare-bkg-buton);
+    }
 
-iframe {
-    width: 100%;
-    height: 300px;
+    .taburi-iframe {
+        display: flex;
+        justify-content: center;
+    }
+
+.container-iframe{
+    width:60%;
+    max-width:500px;
+    min-width:200px;
+}
+
+.container-iframe>iframe{
+    width:100%;
+}
+
+#diversea > section {
+    border: 2px solid var(--culoare-border);
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    box-shadow:  black 0px 0px 10px;
+}
+#diversea>section *{
+    margin-left: 10px;
+
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--culoare-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition:  0.3s ease;
+    background: transparent;
     border: none;
+}
+
+    #scrollTopBtn .arrow {
+        margin: 0 5px;
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    /* Only the arrow moves and changes color on hover */
+    #scrollTopBtn:hover .arrow {
+        transform: translateY(-5px);
+        color: var(--culoare-sectiune);
+    }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
     margin-top: 20px;
+    border: 5px inset #555;
 }
 
-@media (max-width: 768px) {
-    #grid-pagina {
-        grid-template-columns: repeat(2, 1fr); 
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+thead {
+    background-color: var(--culoare-bkg-buton);
+}
+
+tfoot {
+    background-color: var(--culoare-bkg);
+    color: white;
+}
+
+tbody tr:nth-child(odd) td {
+    border-bottom: 1px solid var(--culoare-bkg);
+}
+
+tbody tr:nth-child(even) td {
+    border-bottom: 1px solid var(--culoare-border);
+}
+
+tbody tr:hover {
+    outline: 5px solid rgba(0, 0, 0, 0.7);
+    transition: outline 0.5s ease;
+}
+
+
+caption {
+    caption-side: bottom;
+    font-style: italic;
+    padding: 10px;
+}
+@media screen and (max-width: 800px) {
+    .tabel-container {
+        overflow-x: auto;
     }
 }
+        @media screen and (max-width:1200px) {
 
-@media (max-width: 480px) {
-    #grid-pagina {
-        grid-template-columns: 1fr; 
+            html {
+                font-size: 16px;
+            }
 
-    nav ul {
-        flex-direction: column; 
-    }
-}
+            body {
+                --spatiere-pagina: 50px;
+            }
+            /*TODO: regandire grid ecran mediu*/
+            #grid-pagina {
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-areas: "gr-prezentare gr-prezentare gr-prezentare"
+                    "gr-tabel gr-tabel gr-diversea"
+                    "gr-utilizatori gr-statistici gr-diversea"
+                    "gr-anunturi gr-calendar gr-server"
+            }
+        }
 
-:root {
-    --grid-gap: 200px; 
-}
+        @media screen and (max-width:800px) {
 
-@media (max-width: 1200px) {
-    :root {
-        --grid-gap: 15px; 
-    }
-}
+            html {
+                font-size: 14px;
+            }
 
-@media (max-width: 800px) {
-    :root {
-        --grid-gap: 10px; 
-    }
-}
+            body {
+                --spatiere-pagina: 30px;
+            }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-    grid-gap: var(--grid-gap); 
-}
-
-
-:root {
-    --spacing: 80px; 
-
-@media (max-width: 1200px) {
-    :root {
-        --spacing: 40px; 
-    }
-}
-
-@media (max-width: 800px) {
-    :root {
-        --spacing: 20px; 
-    }
-}
-
-body {
-    padding-left: var(--spacing);
-    padding-right: var(--spacing);
-    margin: 0 auto; 
-}
+            #grid-pagina {
+                display: block;
+            }
+        }

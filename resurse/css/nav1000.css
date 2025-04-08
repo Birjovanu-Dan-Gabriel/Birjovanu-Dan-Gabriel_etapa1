@@ -1,0 +1,8 @@
+﻿ul.menu li div.imag-icon {
+    display: block;
+}
+
+
+ul.menu li div.text-icon {
+    display: none;
+}

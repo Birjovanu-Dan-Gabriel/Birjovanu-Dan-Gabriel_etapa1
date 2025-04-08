@@ -9,6 +9,7 @@
     <meta name="keywords" content="mancare, shaorma, kebab, kebap, comanda, restaurant"><!--cuvintele cheie ale paginii; majoritatea motoarelor de căutare ignoră keywords -->
     <meta name="description" content="Comanda online. Afla informatii despre Shaormeria Dan"><!-- descrierea paginii, adesea apare sub link când sunt afișate rezultatele căutării -->
     <meta name="author" content="Birjovanu Dan-Gabriel">  <!-- autorul/autoarea paginii-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
     <link rel="icon" type="image/png" href="./resurse/ico/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="./resurse/ico/favicon/favicon.svg" />
     <link rel="shortcut icon" href="./resurse/ico/favicon/favicon.ico" />
@@ -16,45 +17,129 @@
     <meta name="apple-mobile-web-app-title" content="Shaormeria Dan" />
     <link rel="manifest" href="./resurse/ico/favicon/site.webmanifest" />
     <link rel="stylesheet" type="text/css" href="./resurse/css/general.css">
+    <link rel="stylesheet" type="text/css" href="./resurse/css/nav.css">
+    <link rel="stylesheet" type="text/css" href="./resurse/css/nav1000.css" media="screen and (max-width:1000px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-
-        <h1> Shaormeria Dan </h1>
-        <section id="meniu">
-        <h2> Meniu navigare: </h2>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#recenzie">Recenzii </a>
-                    <ul>
-                        <li> <a href="#rev_cli">Clienti multumiti </a> </li>
-                        <li> <a href="#rev_usr">Scrie-ne parerea ta! </a> </li>
-                    </ul>
-                </li>
-                <li> <a href="#produse">Produse populare </a> </li>
-                <li> <a href="#livrare">Comanda acum </a> </li>
-                <li> <a href="#info">Despre noi </a> </li>
-            </ul>
-        </nav>
+    <header class="c1" id="titlu">
+        <h1 style="color:black;">Shaormeria Dan</h1>
     </header>
+    <nav>
+        <label id="hamburger" for="ch-menu">
+            <img src="" alt="menu">
+        </label>
+        <input id="ch-menu" type="checkbox">
+        <ul class="menu">
+            <li>
+                <div class="text-icon" id="acasa">Acasa</div>
+                <div class="imag-icon" id="acasa-mediu"><span class="fas fa-regular fa-house"></span></div>
+            </li>
+            <li><a href="#tabel">Info</a></li>
+            <li><a href="#calendar">Evenimente</a></li>
+            <li><a href="#diversea">Diverse</a></li>
+            <li>
+                <label for="diverse">Diverse</label>
+                <!--Am folosit un checkbox pentru inchiderea/deschiderea submeniului-->
+                <input class="ch-submenu" type="checkbox" id="diverse">
+                <ul class="submenu">
+                    <li><a href="#utilizatori">Clienti</a></li>
+                    <li><a href="#server">Server</a></li>
+                    <li><a href="#diverse">Diverse</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 
     <main>
         <div id="grid-pagina">
-            <p>Shaormeria Dan va invita la<b> restaurantul </b>nostru pentru a gusta <em>cel mai delicios</em> <b>kebap</b> din Bucuresti</p>
-            <div class="container-iframe">
-                        <div class="taburi-iframe">
-                            <a href="https://www.youtube.com/embed/CTtMfAzq3kI" target="ifr-video">Prezentare shaorma</a>
-                            <a href="https://www.youtube.com/embed/iMQddaai4Qo" target="ifr-video"><i>Noua locatie </i></a>
-                        </div>
-                        <iframe name="ifr-video" width="350" height="250"
+            <section id="prezentare">
+                <h1>Satisface-ti pofta!</h1>
+                <a href="#diversea">Vezi meniul</a>
+
+            </section>
+
+            <section id="tabel">
+                <h1>Tabel</h1>
+                <div class="tabel-container">
+                    <table>
+                        <caption>Profita de ofertele noastre limitate cat mai apuci!</caption>
+                        <thead>
+                            <tr>
+                                <th>Produsul</th>
+                                <th>Data</th>
+                                <th>Durata</th>
+                                <th>Detalii</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">Kebab mexican</td>
+                                <td>Martie 2025</td>
+                                <td>prima saptamana</td>
+                                <td>Simte gustul clasic mexican</td>
+                            </tr>
+                            <tr>
+                                <td>August 2025</td>
+                                <td>ultimele 2 saptamani</td>
+                                <td>V-am auzit parearae si vom reintroduce periodic acest produs!</td>
+                            </tr>
+                            <tr>
+                                <td>Shaorma cu orez</td>
+                                <td>Iulie 2025</td>
+                                <td>O luna</td>
+                                <td>Incearca un nou tip de shaorma cu orez pentru a-ti satisface poftele</td>
+                            </tr>
+                            <tr>
+                                <td>???????</td>
+                                <td>25 decembie</td>
+                                <td>1 zi</td>
+                                <td>Aboneaza-te la <b>newsletter</b> pentru a afla ce cadou iti pregatim craciunul acesta!</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4"><a href="mailto:shaormeriadan@gmail.com">Aboneaza-te la newsletter-ul nostru ! </a></td>
+                                <!--inca nu stiu cum sa fac asta asa ca butonul asta este un placeho-->
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                </div>
+            </section>
+
+            <section id="calendar">
+                <h1>Calendar</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+
+            <section id="anunturi">
+                <h1>Anunturi</h1>
+
+                <!--tot placeholder-->
+                <div class="container-iframe">
+                    <div class="taburi-iframe">
+                        <a href="https://www.youtube.com/embed/CTtMfAzq3kI" target="ifr-video">Noul produs</a>
+                        <a href="https://www.youtube.com/embed/iMQddaai4Qo" target="ifr-video">Noua locatie </a>
+                    </div>
+                    <iframe name="ifr-video" width="350" height="250"
                             src="https://www.youtube.com/embed/CTtMfAzq3kI" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
-                        </iframe>
-                    </div>
-            <section id="recenzie">
+                    </iframe>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            </section>
+
+            <section id="utilizatori">
+                <!--Am modificat din sectiunea din "utilizatori" in "recenzii"
+                textul este tot un placeholder pana vom ajunge la baze de date-->
                 <h2>Recenzii:</h2>
                 <p> Asculta glasul clientilor nostri multumiti!</p>
                 <section id="rev_cli">
@@ -66,42 +151,27 @@
 
                     <h3>Bogdan Ioan</h3>
                     <p><q>Am avut o experienta minunata! Recomand din tot sufletul!</q><br />⭐⭐⭐⭐⭐</p>
-                </section>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-                <section id="rev_usr">
-                    <h3>Ofera-ne parerea ta!</h3>
-                    <p>Completeaza campurile de mai jos si spune-ne experienta avuta in una dintre locatiile noastre!</p>
-                    <p>____________________</p>
-                    <p>| Scrie aici! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</p>
-                    <p>____________________</p>
-                    <p>⭐⭐⭐⭐⭐</p>
                 </section>
             </section>
 
-            <section id="produse">
-                <h2>Cele mai vandute produse</h2>
+            <section id="statistici">
+                <h1>Statistici</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
 
-                <section>
-                    <h3>Shaorma Falafel</h3>
-                    <figure>
-                        <picture>
-                            <source srcset="./resurse/imagini/shaorma-falafel.jpg-sml.jpg" media="(max-width: 400px)">
-                            <source srcset="./resurse/imagini/shaorma-falafel.jpg-med.jpg" media="(max-width: 600px)">
-                            <img src="./resurse/imagini/shaorma-falafel.jpg" alt="Shaorma Falafel" style="width: 300px; height: 300px; ">
-                        </picture>
-                        <figcaption>Shaorma Falafel Shaormeria Dan</figcaption>
-                    </figure>
-                    <details>
-                        <summary>Detalii</summary>
-                        <p>lipie (70g), cartofi (120g), chifteluțe falafel (150g), varză (55g), castraveți (25g), ceapă (15g), pătrunjel (10g), roșii (40g), sos de usturoi (20g), ketchup (20g), maioneză picantă (20g), maioneză (20g), curry (20g), ulei picant (10g) și ardei iute (5g). </p>
-                    </details>
-                    <details>
-                        <summary>Aditivi</summary>
-                        <p>
-                            Apa Ulei vegetal Amidon Zahar Boabe de Mustar Otet Sare iodata pasta de tomate galbenus de ou ardei iute (extract) aroma tomate usturoi granulat guma Xantan sare otet acid lactic acid citric betacaroten amestec condimente benzoat de sodiu sorbat de potasiu antioxidant calciu disodic Praf de ou Ulei vegetal (palmier) Antioxidanti (BHT) Ag antispumare (Dimetil Polixiloxan) carne Pui sau Vita apa proteina vegetala amidon sare pudra de ardei gluten faina coriandru mustar dextroza proteina din soia di si tri polifosfati de sodiu (E450 E451) Liant (E450, E451) agent de ingrosare
-                        </p>
-                    </details>
-                </section>
+            <section id="server">
+                <h1>Server</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+
+            <section id="diversea">
+                <h1>Cele mai populare produse</h1>
 
                 <section>
                     <h3>Cheese Kebab</h3>
@@ -168,60 +238,16 @@
                         </p>
                     </details>
                 </section>
-
-                <section>
-                    <h3>Sandwich Rapid</h3>
-                    <figure>
-                        <picture>
-                            <source srcset="./resurse/imagini/sandwich-rapid-sml.jpg" media="(max-width: 400px)">
-                            <source srcset="./resurse/imagini/sandwich-rapid-med.jpg" media="(max-width: 600px)">
-                            <img src="./resurse/imagini/sandwich-rapid.jpg" alt="Sandwich-Rapid" style="width: 300px; height: 300px;">
-                        </picture>
-                        <figcaption>Sandwich Rapid Shaormeria Dan</figcaption>
-                    </figure>
-                    <details>
-                        <summary>Detalii</summary>
-                        <p>baghetă (100g), cartofi (70g), carne (100g), varză (30g), castraveți (20g), ceapă (15g), pătrunjel (10g), roșii (20g), sos de usturoi (15g), ketchup (15g), maioneză picantă (15g), maioneză (15g), curry (15g), ulei picant (7g) și ardei iute (7g).</p>
-                    </details>
-                    <details>
-                        <summary>Aditivi</summary>
-                        <p>
-                            Apa Ulei vegetal Amidon Zahar Boabe de Mustar Otet Sare iodata pasta de tomate galbenus de ou ardei iute (extract) aroma tomate usturoi granulat guma Xantan sare otet acid lactic acid citric betacaroten amestec condimente benzoat de sodiu sorbat de potasiu antioxidant calciu disodic Praf de ou Ulei vegetal (palmier) Antioxidanti (BHT) Ag antispumare (Dimetil Polixiloxan) carne Pui sau Vita apa proteina vegetala amidon sare pudra de ardei gluten faina coriandru mustar dextroza proteina din soia di si tri polifosfati de sodiu (E450 E451) Liant (E450, E451) agent de ingrosare
-                        </p>
-                    </details>
-                </section>
-                <a href="./resurse/imagini/meniu.jpg" download="meniu.jpg">Descarca meniu</a>
-            </section>
-
-
-            <section id="livrare">
-                <h2>Comanda acum</h2>
-                <section>
-                    <a href="https://glovoapp.com/" target="blank"> Glovo </a><br />
-                    <a href="https://tazz.ro/" target="blank"> Tazz </a><br />
-                    <a href="https://food.bolt.eu/" target="blank"> Bolt food </a><br />
-                </section>
-            </section>
-
-
-            <section id="info">
-                <h2>Despre noi</h2>
-                <section>
-                    <h3>Cum am inceput</h3>
-                    <p>În 2015, a prins contur visul nostru de a aduce pe harta Bucureștiului o <b>shaormerie</b> care să facă minuni cu rotisorul. Gusturile preparatelor noastre îți vor aduce papilele gustative în delir, iar promisiunea noastră este să-ți oferim o clipă de plăcere ce îți va oferi pauză binemeritată de la stilul de viață alert al secolului nostru.</p>
-                    <details>
-                        <summary>Afla mai multe</summary>
-                        <p>Pe măsură ce timpul trece și ne împlinim peste un deceniu de activitate, ne umplem amintirile cu mândria de a fi alegerea preferată a gurmanzilor bucureșteni și nu numai. Însă, ambiția noastră nu cunoaște limite! Ne îmbunătățim, inovăm și evoluăm necontenit, cu o misiune clară în minte: să răspândim fericirea prin deliciile pe care le oferim.</p>
-                        <p>Vă așteptăm cu mare plăcere să pășiți în sanctuarul gastronomic al Shaormeriei Dan, unde gustul se împletește armonios cu spiritul comunității, iar calitatea întotdeauna își respectă promisiunea alături de prețuri corecte!</p>
-                    </details>
-                </section>
             </section>
         </div>
     </main>
+
+
+
     <footer>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d712.221073314284!2d26.099085101657117!3d44.43553563275412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff472f47f047%3A0x493984726f0235f9!2sFaculty%20of%20Mathematics%20and%20Computer%20Science!5e0!3m2!1sen!2sro!4v1741187713593!5m2!1sen!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <a href="http://www.google.com" target="blank"> Google </a><br />
-        <a href="#"> Inceput </a><br />
+        <a href="#" title="mergi sus" id="link-top"><div id="triunghi"> Inceput</div> </a>
         <a href="tel:+40720000000">Telefon </a><br />
         <a href="mailto:shaormeriadan@gmail.com">Mail </a> <br />
         <a href="https://wa.me/1234567890">WhatsApp</a>
@@ -237,6 +263,13 @@
             Pagina creata la <time datetime="2024-03-05">5 martie 2024</time>.
         </small>
     </footer>
+
+    <a href="#top" id="scrollTopBtn" title="Back to top">
+        <span class="paren">(</span>
+        <span class="arrow">&#9650;</span>
+        <span class="paren">)</span>
+    </a>
+
 </body>
 
 </html>
